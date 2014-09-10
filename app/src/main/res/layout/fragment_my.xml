@@ -13,10 +13,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:src="@drawable/ic_launcher"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="65dp" />
+        android:layout_toEndOf="@+id/editText"
+        android:layout_marginLeft="116dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/editText" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -35,12 +35,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cloudy"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="21°"
-        android:id="@+id/"
-        android:layout_marginRight="91dp"
-        android:layout_above="@+id/imageView"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText" />
+        android:id="@+id/textView"
+        android:layout_marginLeft="93dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="27dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,18 +59,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="8°"
         android:id="@+id/textView2"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/list_item_forecast_textview"
-        android:layout_alignStart="@+id/list_item_forecast_textview" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Cloudy"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/imageView"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView" />
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_marginLeft="88dp" />
 
 </RelativeLayout>
